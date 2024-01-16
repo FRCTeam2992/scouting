@@ -28,8 +28,8 @@ export default defineConfig({
         name: "FRC 2992: The S. S. Prometheus",
         short_name: "Scouting",
         description: "A scouting app for FRC Team 2992 by FRC Team 2834",
-        theme_color: "#292929",
-        background_color: "#292929",
+        theme_color: "#0000CB",
+        background_color: "#0000CB",
         icons: [
           {
             src: "icons/pwa-192x192.png",
