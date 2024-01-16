@@ -62,7 +62,7 @@ function switchPage(n: number) {
 
 nav {
   width: min(400px, 100%);
-  background-color: #222;
+  background-color: #333;
 }
 
 button:disabled {
