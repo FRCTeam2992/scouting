@@ -25,9 +25,9 @@ export default defineConfig({
     VitePWA({
       includeAssets: ["assets/*", "icons/*"],
       manifest: {
-        name: "Black Hawks Scouting",
+        name: "FRC 2992: The S. S. Prometheus",
         short_name: "Scouting",
-        description: "A scouting app by FRC Team 2834",
+        description: "A scouting app for FRC Team 2992 by FRC Team 2834",
         theme_color: "#292929",
         background_color: "#292929",
         icons: [
