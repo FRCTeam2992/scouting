@@ -66,7 +66,7 @@ const tba = useTBAStore();
 const widgets = useWidgetsStore();
 
 const selectType = $ref(0);
-let eventKey = $ref("");
+let eventKey = $ref(config.data.eventKey);
 const matchLevel = $ref(0);
 const matchNumber = $ref(1);
 const selectedTeam = $ref(0);
@@ -155,6 +155,8 @@ function loadTBAData() {
   matchesLoadStatus = "Loading...";
   tba.load(eventKey, "matches").then(value => updateStatus($$(matchesLoadStatus), $$(matches), value));
 }
+
+if (eventKey && eventKey !== "") { loadTBAData() }
 </script>
 
 <style>

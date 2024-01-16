@@ -1,0 +1,132 @@
+{
+  "heading": "Crescendo - 2024 (Pit Scouting)",
+  "logo": "2992LogoFinal-Small.png",
+  "eventKey": "2024arli",
+  "skipTeamSelection": true,
+  "pages": [
+    {
+      "name": "Team",
+      "widgets": [
+        {
+          "name": "Team Number",
+          "type": "number"
+        },
+        {
+          "name": "Drive Coach",
+          "type": "text"
+        },
+        {
+          "name": "Driver Names",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Robot",
+      "widgets": [
+        {
+          "name": "Height",
+          "type": "number"
+        },
+        {
+          "name": "Length",
+          "type": "number"
+        },
+        {
+          "name": "Width",
+          "type": "number"
+        },
+        {
+          "name": "Number of Batteries",
+          "type": "number"
+        },
+        {
+          "name": "Weight",
+          "type": "number"
+        },
+        {
+          "name": "Drivetrain",
+          "type": "dropdown",
+          "options": [
+            "West Coast",
+            "Swerve",
+            "Butterfly",
+            "Mecanum",
+            "Other"
+          ]
+        },
+        {
+          "name": "Swerve Motor Type",
+          "type": "dropdown",
+          "options": [
+            "Neo",
+            "Falcon",
+            "Cim"
+          ]
+        },
+        {
+          "name": "Swerve Type",
+          "type": "dropdown",
+          "options": [
+            "No swerve",
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "Neo",
+            "Falcon",
+            "Custom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Match Play",
+      "widgets": [
+        {
+          "name": "Cycle Time",
+          "type": "number"
+        },
+        {
+          "name": "Can Pick Up",
+          "type": "multicheckbox",
+          "options": [
+            "Ground",
+            "Source"
+          ]
+        },
+        {
+          "name": "Can Score In",
+          "type": "multicheckbox",
+          "options": [
+            "Speaker",
+            "Amp",
+            "Trap"
+          ]
+        },
+        {
+          "name": "Scoring Methods",
+          "type": "multicheckbox",
+          "options": [
+            "Manual",
+            "Auto"
+          ]
+        },
+        {
+          "name": "Preferred Pickup Location",
+          "type": "dropdown",
+          "options": [
+            "Ground",
+            "Source"
+          ],
+          "defaultOption": true
+        },
+        {
+          "name": "Comments",
+          "type": "textarea",
+          "colspan": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "heading": "Crescendo - 2024 (Match Scouting)",
+  "logo": "2992LogoFinal-Small.png",
+  "eventKey": "2024arli",
+  "pages": [
+    {
+      "name": "Setup",
+      "widgets": [
+        {
+          "name": "Scouter Name",
+          "type": "text",
+          "validation": {
+            "comparison": "greater",
+            "value": 0
+          }
+        },
+        {
+          "name": "Starting Position",
+          "type": "positions",
+          "file": "field.png"
+        }
+      ]
+    },
+    {
+      "name": "Autonomous",
+      "widgets": [
+        {
+          "name": "Left Starting Zone",
+          "type": "checkbox"
+        },
+        {
+          "type": "spacer",
+          "height": 20
+        },
+        {
+          "name": "Amp Notes",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Speaker Notes",
+          "type": "spinbox",
+          "prefix": "Auto"
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "name": "Picked Up From",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Ground",
+          "type": "spinbox"
+        },
+        {
+          "name": "Source",
+          "type": "spinbox",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "name": "Scoring",
+          "type": "heading",
+          "colspan": 5,
+          "align": "center"
+        },
+        {
+          "name": "Speaker Notes",
+          "type": "spinbox"
+        },
+        {
+          "name": "Amplified Speaker Notes",
+          "type": "spinbox",
+          "row": 4,
+          "col": 3
+        },
+        {
+          "name": "Amp Notes",
+          "type": "spinbox"
+        },
+        {
+          "name": "Co-op Bonus",
+          "type": "checkbox",
+          "col": 2
+        },
+        {
+          "type": "spacer",
+          "height": 20
+        },
+        {
+          "name": "Defense Rating",
+          "type": "dropdown",
+          "options": [
+            "0 (Not Played)",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5 (Very Effective)"
+          ],
+          "col": 2
+        },
+        {
+          "name": "Tipped",
+          "type": "checkbox",
+          "col": 2
+        }
+      ]
+    },
+    {
+      "name": "Endgame",
+      "widgets": [
+        {
+          "name": "End Location",
+          "type": "radio",
+          "options": [
+            "Onstage and Spotlit",
+            "Onstage",
+            "Parked",
+            "None"
+          ],
+          "default": 3
+        },
+        {
+          "name": "Failed Climb",
+          "type": "checkbox"
+        },
+        {
+          "name": "Robots Onstage",
+          "type": "spinbox",
+          "max": 3
+        },
+        {
+          "name": "Note Scored in Trap",
+          "type": "checkbox"
+        },
+        {
+          "name": "Mechanical Failures",
+          "type": "text"
+        },
+        {
+          "name": "Comments",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
