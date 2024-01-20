@@ -16,6 +16,23 @@
   <noscript>This app uses JavaScript. Please enable it to continue.</noscript>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/common/dataSync.ts"></script>
+  <button id="check">Check Online</button>
+  <script>
+    async function onlineCheck() {
+    if (navigator.onLine) {
+        const response = await fetch("https://dummy-data-api-server.fly.dev");
+        return (response.status === 200) && ((await response.json()).status === "OK");
+    }
+    return false
+}
+    function handleClick(event) {
+      onlineCheck().then(isOnline => {
+        console.log(isOnline ? "Online" : "Offline")
+      })
+    }
+    document.getElementById("check").addEventListener("click", handleClick)
+  </script>
 </body>
 
 </html>
